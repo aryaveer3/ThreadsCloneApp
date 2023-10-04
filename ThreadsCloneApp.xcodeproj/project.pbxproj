@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02BDE7592ACD6A1E00DF799E /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BDE7582ACD6A1E00DF799E /* ProfileThreadFilter.swift */; };
+		02E1E9412AC40E4B002ED743 /* CirclularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1E9402AC40E4B002ED743 /* CirclularProfileImageView.swift */; };
+		02E1E9432AC40F05002ED743 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1E9422AC40F05002ED743 /* UserCell.swift */; };
 		02EDBBA82ABDF489004088B9 /* ThreadsCloneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDBBA72ABDF489004088B9 /* ThreadsCloneAppApp.swift */; };
 		02EDBBAA2ABDF489004088B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDBBA92ABDF489004088B9 /* ContentView.swift */; };
 		02EDBBAC2ABDF48B004088B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02EDBBAB2ABDF48B004088B9 /* Assets.xcassets */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02BDE7582ACD6A1E00DF799E /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
+		02E1E9402AC40E4B002ED743 /* CirclularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclularProfileImageView.swift; sourceTree = "<group>"; };
+		02E1E9422AC40F05002ED743 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		02EDBBA42ABDF489004088B9 /* ThreadsCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02EDBBA72ABDF489004088B9 /* ThreadsCloneAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsCloneAppApp.swift; sourceTree = "<group>"; };
 		02EDBBA92ABDF489004088B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +58,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02BDE7572ACD6A0800DF799E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02BDE7582ACD6A1E00DF799E /* ProfileThreadFilter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02E1E93F2AC40E22002ED743 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				02E1E9402AC40E4B002ED743 /* CirclularProfileImageView.swift */,
+				02E1E9422AC40F05002ED743 /* UserCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		02EDBB9B2ABDF489004088B9 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +146,7 @@
 		02EDBBBA2ABDF4F0004088B9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				02E1E93F2AC40E22002ED743 /* Components */,
 				02EDBBDB2ABE06D7004088B9 /* Profile */,
 				02EDBBD72ABE0674004088B9 /* ThreadCreation */,
 				02EDBBD32ABE0652004088B9 /* Activity */,
@@ -252,6 +276,7 @@
 		02EDBBDB2ABE06D7004088B9 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				02BDE7572ACD6A0800DF799E /* Model */,
 				02EDBBDC2ABE06DB004088B9 /* View */,
 			);
 			path = Profile;
@@ -335,12 +360,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E1E9412AC40E4B002ED743 /* CirclularProfileImageView.swift in Sources */,
 				02EDBBCC2ABE0576004088B9 /* FeedView.swift in Sources */,
 				02EDBBC22ABDF5B4004088B9 /* LoginView.swift in Sources */,
 				02EDBBAA2ABDF489004088B9 /* ContentView.swift in Sources */,
 				02EDBBE02AC2B787004088B9 /* ThreadCell.swift in Sources */,
 				02EDBBCA2ABE0099004088B9 /* ThreadsTabView.swift in Sources */,
+				02E1E9432AC40F05002ED743 /* UserCell.swift in Sources */,
 				02EDBBC72ABDFDFA004088B9 /* ThreadsTextFieldModifier.swift in Sources */,
+				02BDE7592ACD6A1E00DF799E /* ProfileThreadFilter.swift in Sources */,
 				02EDBBD62ABE0667004088B9 /* ActivityView.swift in Sources */,
 				02EDBBD22ABE0630004088B9 /* ExplorevView.swift in Sources */,
 				02EDBBA82ABDF489004088B9 /* ThreadsCloneAppApp.swift in Sources */,
