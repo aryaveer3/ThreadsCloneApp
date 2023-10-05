@@ -8,8 +8,68 @@
 import SwiftUI
 
 struct ThreadCreationView: View {
+    @State private var caption = ""
+   
+
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
-        Text("Hello, ThreadCreationView!")
+        NavigationStack{
+            VStack{
+                HStack(alignment: .top){
+                   CirclularProfileImageView()
+                    
+                    VStack(alignment: .leading,spacing: 4){
+                        Text("maximus_kin1")
+                            .fontWeight(.semibold)
+                        
+                        TextField("Start a thread", text: $caption, axis: .vertical)
+                    }
+                    .font(.footnote)
+                    
+                    Spacer()
+                    
+                    if !caption.isEmpty{
+                        Button{
+                            caption = ""
+                        }label: {
+                            Image(systemName: "xmark")
+                                .resizable()
+                                .frame(width: 15, height: 15)
+                                .foregroundColor(.gray)
+                        }
+                    }
+                }
+                Spacer()
+            }
+            .padding()
+            .navigationTitle("New Thread")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar{
+                ToolbarItem(placement: .navigationBarLeading){
+                    Button("Cancel"){
+                        dismiss()
+                    }
+                    .font(.subheadline)
+                    .foregroundColor(.black)
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing){
+                    Button("Post"){
+                        
+                    }
+                    .opacity(caption.isEmpty ? 0.5 : 1.0)
+                    .disabled(caption.isEmpty)
+                    .font(.subheadline)
+                    .foregroundColor(.black)
+                    .fontWeight(.semibold)
+                    
+                }
+            
+                
+            }
+
+        }
     }
 }
 
