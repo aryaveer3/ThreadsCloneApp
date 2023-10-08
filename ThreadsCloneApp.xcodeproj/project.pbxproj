@@ -44,6 +44,8 @@
 		02BDE7A62AD1A05200DF799E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BDE7A52AD1A05200DF799E /* User.swift */; };
 		02BDE7A82AD1A33000DF799E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BDE7A72AD1A33000DF799E /* UserService.swift */; };
 		02BDE7AB2AD1A4AD00DF799E /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BDE7AA2AD1A4AD00DF799E /* ProfileViewModel.swift */; };
+		02BDE7AE2AD3218900DF799E /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BDE7AD2AD3218900DF799E /* ExploreViewModel.swift */; };
+		02BDE7B02AD3255200DF799E /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BDE7AF2AD3255200DF799E /* PreviewProvider.swift */; };
 		02E1E9412AC40E4B002ED743 /* CirclularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1E9402AC40E4B002ED743 /* CirclularProfileImageView.swift */; };
 		02E1E9432AC40F05002ED743 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1E9422AC40F05002ED743 /* UserCell.swift */; };
 		02EDBBA82ABDF489004088B9 /* ThreadsCloneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDBBA72ABDF489004088B9 /* ThreadsCloneAppApp.swift */; };
@@ -73,6 +75,8 @@
 		02BDE7A52AD1A05200DF799E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		02BDE7A72AD1A33000DF799E /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		02BDE7AA2AD1A4AD00DF799E /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		02BDE7AD2AD3218900DF799E /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		02BDE7AF2AD3255200DF799E /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		02E1E9402AC40E4B002ED743 /* CirclularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclularProfileImageView.swift; sourceTree = "<group>"; };
 		02E1E9422AC40F05002ED743 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		02EDBBA42ABDF489004088B9 /* ThreadsCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +198,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		02BDE7AC2AD3217000DF799E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				02BDE7AD2AD3218900DF799E /* ExploreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		02E1E93F2AC40E22002ED743 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +282,7 @@
 		02EDBBB92ABDF4EE004088B9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				02BDE7AF2AD3255200DF799E /* PreviewProvider.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -363,6 +376,7 @@
 		02EDBBCF2ABE05FD004088B9 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				02BDE7AC2AD3217000DF799E /* ViewModel */,
 				02EDBBD02ABE0602004088B9 /* View */,
 			);
 			path = Explore;
@@ -534,6 +548,7 @@
 				02BDE79C2ACEAC0200DF799E /* RegistrationViewModel.swift in Sources */,
 				02EDBBCC2ABE0576004088B9 /* FeedView.swift in Sources */,
 				02BDE79E2ACEAF4200DF799E /* AuthService.swift in Sources */,
+				02BDE7B02AD3255200DF799E /* PreviewProvider.swift in Sources */,
 				02BDE75F2ACE77D700DF799E /* EditProfileView.swift in Sources */,
 				02EDBBC22ABDF5B4004088B9 /* LoginView.swift in Sources */,
 				02BDE7A82AD1A33000DF799E /* UserService.swift in Sources */,
@@ -542,6 +557,7 @@
 				02BDE7A42ACEC89A00DF799E /* LoginViewModel.swift in Sources */,
 				02EDBBCA2ABE0099004088B9 /* ThreadsTabView.swift in Sources */,
 				02E1E9432AC40F05002ED743 /* UserCell.swift in Sources */,
+				02BDE7AE2AD3218900DF799E /* ExploreViewModel.swift in Sources */,
 				02EDBBC72ABDFDFA004088B9 /* ThreadsTextFieldModifier.swift in Sources */,
 				02BDE7592ACD6A1E00DF799E /* ProfileThreadFilter.swift in Sources */,
 				02BDE7A22ACEB63E00DF799E /* ContentViewModel.swift in Sources */,

@@ -9,14 +9,16 @@ import SwiftUI
 
 struct ExplorevView: View {
     @State private var searchText = ""
+    @StateObject var viewModel = ExploreViewModel()
+    
     var body: some View {
         NavigationStack{
             ScrollView{
                 LazyVStack
                 {
-                    ForEach(0...10, id:\.self){ user in
+                    ForEach(viewModel.users){ user in
                         VStack {
-                            UserCell()
+                            UserCell(user: user)
                             Divider()
                         }
                         .padding(.vertical, 4)
