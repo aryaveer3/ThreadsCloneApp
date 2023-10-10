@@ -40,8 +40,15 @@ class UserService {
          
         //returning all the users except the current
         return users.filter({$0.id != currentUid})
-        
-        
+    }
+    
+    @MainActor
+    func updateUserProfileImage(withImageUrl imageUrl: String) async throws{
+        guard let currentId = Auth.auth().currentUser?.uid else {return}
+        try await Firestore.firestore().collection("users").document(currentId).updateData([
+            "profileImageUrl": imageUrl
+        ])
+        self.currentUser?.profileImageUrl = imageUrl
     }
 }
 
