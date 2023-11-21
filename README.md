@@ -4,6 +4,11 @@
 
 ThreadsCloneApp is a social media iOS app built using Swift UI and Firebase. It replicates the functionality of a popular threads-based social media platform, featuring a feed view, explore view, profile view, edit profile UI, create thread UI, and more. This README provides information on the app's structure, features, and setup instructions.
 
+
+![ThreadsCloneApp](https://www.filepicker.io/api/file/dYQCGgI9QuKutJznK2Dg)
+
+
+
 ## Features
 
 - **Feed View UI:** Displays a feed of threads, allowing users to scroll through and engage with posts.
@@ -48,9 +53,4 @@ ThreadsCloneApp is a social media iOS app built using Swift UI and Firebase. It 
 
 3. Install any necessary dependencies.
 
-```bash
-# Example using Swift Package Manager
-cd ThreadsCloneApp
-swift package update
-```
 4. Build and run the app on the iOS simulator or a physical device.
