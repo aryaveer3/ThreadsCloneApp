@@ -1,4 +1,4 @@
-# ThreadsCloneApp - iOS App
+# ThreadsClone - iOS App
 
 ## Overview
 
